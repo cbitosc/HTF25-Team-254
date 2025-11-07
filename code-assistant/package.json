@@ -1,0 +1,28 @@
+{
+  "name": "code-assistant",
+  "displayName": "Code-Assistant (SoX Voice Capture)",
+  "description": "A VS Code extension that captures microphone audio via SoX and plays it back in a webview.",
+  "version": "0.0.4",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:code-assistant.startVoiceAssistant"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-assistant.startVoiceAssistant",
+        "title": "Start Voice Assistant",
+        "category": "Code Assistant"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "echo \"No tests\""
+  }
+}
